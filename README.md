@@ -43,6 +43,10 @@ project and you should be ready to go! It should look something like below:
 
 Once all is installed and ready to go the user for the login is 'lefteris.kokkonas@gmail.com' and password is 'password'. Enjoy
 
+There is a full fledged authentication protected Restful API if you wish to play around with it in postman the available endpoints are:
+* http://notes.local/api/auth which accepts only `POST`
+* http://notes.local/api/notes[/page/:page][/:id] which accepts `GET`,`POST`,`PUT`
+
 ###Front end
 
  Tech stack used:
