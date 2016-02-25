@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>New note</h1>
+            <form name="noteForm" ng-model="noteForm" ng-submit="submit(noteForm.$valid)">
+                <uib-alert ng-repeat="alert in formErrors" type="danger" close="formErrors.splice($index, 1)">{{alert}}</uib-alert>
+                <div class="form-group">
+                    <label for="title">Title: <span class="text-danger">*</span></label>
+                    <input type="text" name="username" ng-model="note.title" required="required" class="form-control" id="title">
+                </div>
+                <div class="form-group">
+                    <label for="text">Text: <span class="text-danger">*</span></label>
+                    <textarea name="password" ng-model="note.text" required="required" class="form-control" id="text"></textarea>
+                </div>
+                <a ui-sref="notes" class="btn btn-default">Cancel</a>
+                <button type="submit" class="btn btn-primary pull-right">ADD NOTE &nbsp;<i class="fa fa-angle-right"></i></button>
+            </form>
+        </div>
+    </div>
+</div>

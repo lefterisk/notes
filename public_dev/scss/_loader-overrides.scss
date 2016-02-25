@@ -1,0 +1,31 @@
+$loadingBarColor: #bb3423;
+$loadingBarHeight: 4px;
+$spinnerColor: #fff;
+
+#loading-bar {
+    .bar {
+        background: $loadingBarColor !important;
+        height: $loadingBarHeight !important;
+    }
+
+    .peg {
+        height: $loadingBarHeight !important;
+        -moz-box-shadow: $loadingBarColor 1px 0 6px 1px !important;
+        -ms-box-shadow: $loadingBarColor 1px 0 6px 1px !important;
+        -webkit-box-shadow: $loadingBarColor 1px 0 6px 1px !important;
+        box-shadow: $loadingBarColor 1px 0 6px 1px !important;
+    }
+}
+
+#loading-bar-spinner {
+    top: 15px !important;
+    left: 10px !important;
+
+    .spinner-icon {
+        height: 20px !important;
+        width: 20px !important;
+
+        border-top-color: $spinnerColor !important;
+        border-left-color: $spinnerColor !important;
+    }
+}

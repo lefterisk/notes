@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Notes</h1>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                   <table class="table">
+                       <thead>
+                       <th width="150">Created by</th>
+                       <th>Title</th>
+                       <th width="150">Date</th>
+                       </thead>
+                       <tbody>
+                       <tr ng-repeat="note in notes" ng-click="goToItem(note.id)">
+                           <td>{{note.userFirstName + ' ' + note.userLastName}}</td>
+                           <td>{{note.title}}</td>
+                           <td>{{note.modified}}</td>
+                       </tr>
+                       </tbody>
+
+                   </table>
+                    <a ui-sref="notes-add" class="btn btn-primary pull-left">CREATE A NEW NOTE &nbsp;&nbsp;<i class="fa fa-angle-right"></i></a>
+
+                    <div class="btn-toolbar pull-right" role="group">
+                        <uib-pagination class="btn-group" ng-show="pagination.pageCount > 1" max-size="4" total-items="pagination.totalItemCount" items-per-page="pagination.itemsInPage" ng-model="pagination.currentPage" class="pagination-sm" boundary-links="true" rotate="false"></uib-pagination>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

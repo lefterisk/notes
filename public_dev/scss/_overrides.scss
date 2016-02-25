@@ -1,0 +1,39 @@
+/*Buttons overrides*/
+.btn {
+    border-width: 2px;
+}
+.btn-primary {
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+    border-bottom:2px solid darken($brand-primary, 10) ;
+    font-weight: bold;
+
+    .fa {
+        font-size: 1.5em;
+        line-height: 0.8em;
+        position: relative;
+        top:1px;
+    }
+}
+
+.table {
+    thead {
+        background: #e8ebed;
+        tr>th {
+            border-bottom: none;
+        }
+    }
+
+    tbody {
+        tr {
+            td {
+                border-top: none;
+                border-bottom: 1px solid $gray-lighter;
+            }
+        }
+    }
+}
+.pagination {
+    margin:0;
+}
